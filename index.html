@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAP B1 Radar</title>
+<meta name="description" content="Automatic SAP Business One news, updated every 6 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f9;--card:#fff;--fg:#14202e;--muted:#5a6878;--line:#dde3ea;--accent:#0a6ed1;--soft:#e6f0fb;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1520;--card:#142030;--fg:#e8eef5;--muted:#93a3b5;--line:#22324a;--accent:#4aa3f0;--soft:#16304d;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:28px 16px 60px}
+header h1{margin:0;font-size:28px;letter-spacing:-.01em}header h1 span{color:var(--accent)}
+.sub{color:var(--muted);margin:6px 0 4px}.stamp{font:12px "IBM Plex Mono",monospace;color:var(--muted)}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 16px}
+input{flex:1 1 220px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--fg);font:inherit}
+button{padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--fg);font:13px inherit;cursor:pointer}
+button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.list{display:flex;flex-direction:column;gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;font:12px "IBM Plex Mono",monospace;color:var(--muted)}
+.cat{color:var(--accent)}
+.card h2{font-size:17px;margin:8px 0 6px;line-height:1.35}.card h2 a{color:inherit;text-decoration:none}.card h2 a:hover{color:var(--accent)}
+.card p{margin:0;color:var(--muted);font-size:14.5px}.card .why{margin-top:8px;color:var(--fg);background:var(--soft);padding:8px 11px;border-radius:9px;font-size:14px}
+.empty{color:var(--muted);text-align:center;padding:40px 0}
+footer{margin-top:30px;color:var(--muted);font-size:12.5px}
+</style></head><body><div class="wrap">
+<header>
+  <h1>SAP <span>B1</span> Radar</h1>
+  <p class="sub">SAP Business One news, collected and summarised automatically every 6 hours.</p>
+  <div class="stamp">Last checked: Mon, 26 Oct 2026 12:34:42 GMT · 2 stories</div>
+</header>
+<div class="tools">
+  <input id="q" type="search" placeholder="Search news…" aria-label="Search news">
+  <button class="on" data-f="all">All</button><button data-f="Customer story">Customer story</button>
+</div>
+<div class="list" id="list">
+    <article class="card" data-cat="Customer story" data-text="after previous erp attempts, best designers inc. goes live on sap business one with consultare best designers inc. goes live on sap business one after previous erp attempts with consultant consultare.">
+      <div class="meta"><span class="cat">Customer story</span><time datetime="2026-10-15T14:56:06.000Z">15 Oct 2026</time><span>openPR.com</span></div>
+      <h2><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPcnlGYTdmNmx4UmpkMnVic1Y3cGR5N0FNMmNyVVRPOGowMGQ5bEx3WFZ1US1MdFUxSG4xRkZFQUxSX3hFN3pLM3FXR0xENHNaY3o3REpNaFBaTXROSjZqM1NBRmRCVmN4V3p6WGdZcjVGNERjNlVEMWxNV21NZkgxeW9MMEZsRFpTM09ra0thTFIxLXlsQ0pqZV9OaS1oNjBs?oc=5" target="_blank" rel="noopener">After Previous ERP Attempts, Best Designers Inc. Goes Live on SAP Business One with Consultare</a></h2>
+      <p>Best Designers Inc. goes live on SAP Business One after previous ERP attempts with consultant Consultare.</p>
+      <p class="why"><b>Why it matters:</b> Directly relevant to SAP B1 consulting as a customer go-live story.</p>
+    </article>
+    <article class="card" data-cat="Customer story" data-text="10 new customers a day: the global success of sap business one more than 83,000 customers and 1.2 million users across 170 countries rely on sap business one.">
+      <div class="meta"><span class="cat">Customer story</span><time datetime="2025-12-15T13:15:00.000Z">15 Dec 2025</time><span>SAP News Center</span></div>
+      <h2><a href="https://news.sap.com/2025/12/global-success-of-sap-business-one/" target="_blank" rel="noopener">10 New Customers a Day: The Global Success of SAP Business One</a></h2>
+      <p>More than 83,000 customers and 1.2 million users across 170 countries rely on SAP Business One.</p>
+      <p class="why"><b>Why it matters:</b> Highlights global adoption and success of SAP B1, relevant for consultants.</p>
+    </article></div>
+<p class="empty" id="none" hidden>No stories match your search.</p>
+<footer>Independent page, not an official SAP product. Summaries are machine-generated from public headlines; open the source before relying on any detail.</footer>
+</div>
+<script>
+let f="all";const q=document.getElementById("q"),cards=[...document.querySelectorAll(".card")],none=document.getElementById("none");
+function apply(){const t=q.value.toLowerCase().trim();let shown=0;cards.forEach(c=>{const ok=(f==="all"||c.dataset.cat===f)&&(!t||c.dataset.text.includes(t));c.hidden=!ok;if(ok)shown++});none.hidden=shown>0||!cards.length}
+document.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{f=b.dataset.f;document.querySelectorAll("[data-f]").forEach(x=>x.classList.toggle("on",x===b));apply()});
+q.oninput=apply;
+</script></body></html>
