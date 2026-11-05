@@ -1,6 +1,19 @@
 {
   "items": [
     {
+      "id": "sap business one 30 years of growing together",
+      "title": "SAP Business One: 30 Years of Growing Together",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQQlJ1emU3bGF0WUpDYUtiYnNIUFRTNkc3c1E4YkdjSTYzOEdaRXJDbXBuaW5uVHZwX0pwdTJLWU1ENWRpLU81ZUpCNnFUS1RNWDFCNUdtMWg1MXFSWG5EbTJaMWpwb2VtUHM5dktqVUlnNldYdURIMHc2cVBoeGlIeg?oc=5",
+      "date": "2026-11-05T12:16:15.000Z",
+      "snippet": "SAP Business One: 30 Years of Growing Together SAP News Center",
+      "publisher": "SAP News Center",
+      "feed": "Google News",
+      "category": "Customer story",
+      "summary": "SAP Business One marks 30 years of growth, celebrating three decades of collaboration with customers and partners.",
+      "why": "Learning about the product's long‑term market presence helps B1 consultants understand customer evolution and future solution positioning.",
+      "ai": true
+    },
+    {
       "id": "after previous erp attempts best designers inc goes live on sap business one with consultare",
       "title": "After Previous ERP Attempts, Best Designers Inc. Goes Live on SAP Business One with Consultare",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcnlGYTdmNmx4UmpkMnVic1Y3cGR5N0FNMmNyVVRPOGowMGQ5bEx3WFZ1US1MdFUxSG4xRkZFQUxSX3hFN3pLM3FXR0xENHNaY3o3REpNaFBaTXROSjZqM1NBRmRCVmN4V3p6WGdZcjVGNERjNlVEMWxNV21NZkgxeW9MMEZsRFpTM09ra0thTFIxLXlsQ0pqZV9OaS1oNjBs?oc=5",
@@ -52,8 +65,10 @@
     "carlsquare private equity insights q3 2026",
     "oil corporation nears completion of erp system plans data centre and ai integration",
     "versafile named a 2026 deloitte technology fast 50 companies to watch winner",
-    "c tfg51 dumps study questions mock exam preparation"
+    "c tfg51 dumps study questions mock exam preparation",
+    "the asug tech connect review vendors had their ai moment now sap customers have their say",
+    "sap business one 30 years of growing together"
   ],
-  "lastChecked": "2026-11-05T06:02:12.974Z",
+  "lastChecked": "2026-11-05T19:45:24.739Z",
   "lastAiError": null
 }
