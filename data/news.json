@@ -69,6 +69,6 @@
     "the asug tech connect review vendors had their ai moment now sap customers have their say",
     "sap business one 30 years of growing together"
   ],
-  "lastChecked": "2026-11-05T19:45:24.739Z",
-  "lastAiError": null
+  "lastChecked": "2026-11-06T05:58:30.094Z",
+  "lastAiError": "Expected ',' or '}' after property value in JSON at position 284"
 }
